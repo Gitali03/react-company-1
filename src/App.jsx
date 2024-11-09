@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import Input from './components/Input'
-import Button from './components/Button'
+import { useState } from "react";
+import "./App.css";
+import Input from "./components/Input";
+import Button from "./components/Button";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="container">
-      <img src="image.png" alt="background-image" />
+      <img src="\image.png" alt="background-image" />
 
       <div className="form-container">
         <form>
@@ -16,12 +16,10 @@ function App() {
           <div className="divider"></div>
           <Input></Input>
           <Button></Button>
-          
         </form>
       </div>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
