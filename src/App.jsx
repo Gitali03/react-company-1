@@ -16,6 +16,7 @@ function App() {
           <div className="divider"></div>
           <Input></Input>
           <Button></Button>
+          
         </form>
       </div>
     </div>

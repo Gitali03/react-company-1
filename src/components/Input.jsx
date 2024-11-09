@@ -1,10 +1,19 @@
-
-
+import styles from "./input.module.css";
 export default function Input() {
   return (
     <div>
-      <input type="text" placeholder="Email" name="email" />
-      <input type="password" placeholder="Password" name="password" />
+      <input
+        className={styles.input}
+        type="text"
+        placeholder="Email"
+        name="email"
+      />
+      <input
+        className={styles.input}
+        type="password"
+        placeholder="Password"
+        name="password"
+      />
     </div>
   );
 }
