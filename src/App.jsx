@@ -1,9 +1,24 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./pages/Login";
 import "./App.css";
-import Input from "./components/Input";
+/*import Input from "./components/Input";
 import Button from "./components/Button";
-import inputİmg from "./assets/image.png"
+import inputİmg from "./assets/image.png"*/
 
 function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+/*function App() {
   return (
     <div className="container">
       <img src={inputİmg} alt="background-image" />
@@ -20,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
