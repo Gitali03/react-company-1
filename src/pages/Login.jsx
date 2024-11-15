@@ -4,6 +4,9 @@ import inputImg from "../assets/image.png";
 import styles from "./Login.module.css";
 
 export default function Login() {
+  const handleButtonClick = () => {
+    alert('Button Clicked!');
+  };
   return (
 
     <div className={styles.container}>
@@ -12,8 +15,9 @@ export default function Login() {
         <form>
           <h1>LOG IN</h1>
           <div className={styles.divider}></div>
-          <Input />
-          <Button />
+          <Input type="text" placeholder="Email" name="email"/>
+          <Input type="password" placeholder="Password" name="password"/>
+          <Button text= "Enter" onClick={handleButtonClick} />
         </form>
       </div>
     </div>
